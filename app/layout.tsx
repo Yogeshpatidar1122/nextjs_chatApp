@@ -5,7 +5,6 @@ import AuthContext from './context/Authcontext'
 import ActiveStatus from './components/ActiveStatus'
 
 import './globals.css'
-import MySVGComponent from '@/public/mySVGComponent'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,7 +24,7 @@ export default function RootLayout({
         <AuthContext>
           <ToasterContext />
           <ActiveStatus />
-          <MySVGComponent/>
+          
           {children}
         </AuthContext>
       </body>
